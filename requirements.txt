@@ -5,4 +5,3 @@ seaborn
 scikit-learn
 jupyter
 notebook
-mlflow==2.19.0
