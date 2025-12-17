@@ -71,7 +71,7 @@ def main():
     raw_data_path = os.path.join(
         base_dir, "..", "water_potability_raw", "water_potability.csv"
     )
-    output_dir = os.path.join(base_dir, ".." "water_potability_preprocessing")
+    output_dir = os.path.join(base_dir, "water_potability_preprocessing")
 
     print("[INFO] Memulai Otomatisasi Preprocessing")
     df = load_data(raw_data_path)
