@@ -65,12 +65,13 @@ def save_data(X_train, X_test, y_train, y_test, output_dir):
     print(f"[INFO] Data test disimpan di: {test_path}")
 
 
+# Fungsi utama
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     raw_data_path = os.path.join(
         base_dir, "..", "water_potability_raw", "water_potability.csv"
     )
-    output_dir = os.path.join(base_dir, "..", "water_potability_preprocessing", "data")
+    output_dir = os.path.join(base_dir, "water_potability_preprocessing")
 
     print("[INFO] Memulai Otomatisasi Preprocessing")
     df = load_data(raw_data_path)
